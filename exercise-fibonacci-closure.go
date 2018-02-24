@@ -11,16 +11,13 @@ func fibonacci() func() int {
 		case 0:
 			i++
 			f2 = f0
-			break
 		case 1:
 			i++
 			f2 = f1
-			break
 		default:
 			f2 = f1 + f0
 			f0 = f1
 			f1 = f2
-			break
 		}
 		return f2
 	}
